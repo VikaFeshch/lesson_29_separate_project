@@ -2,11 +2,16 @@
 assets
 pytest.ini
 credentials.json
+output.json
+pytest_cache
+pytest_html_report
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 .vscode/
+local_reports/
+docker_reports/
 
 # C extensions
 *.so
@@ -59,6 +64,7 @@ archive/
 # Translations
 *.mo
 *.pot
+{}output.json
 
 # Django stuff:
 *.log

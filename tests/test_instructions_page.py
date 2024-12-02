@@ -1,13 +1,16 @@
+import pytest
 from src.models.car_model import Car
 from src.pages.instructions_page import InstructionsPage
 from src.utils.files_utils import FileUtils
 from tests.base_test import BaseTest
 from assertpy import assert_that
 
+
 class TestInstructionsPage(BaseTest):
     """Test Instructions pages"""
 
-    def test_add_car(self, driver, auto_config):
+    @pytest.mark.skip(reason="Not completed")
+    def test_instructions_download(self, driver, auto_config):
         # Login as guest
         self.login_as_guest(driver, auto_config)
         instructions_page = InstructionsPage(driver, auto_config)
