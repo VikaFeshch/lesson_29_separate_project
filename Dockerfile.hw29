@@ -1,0 +1,12 @@
+
+FROM python:3.11-slim
+
+WORKDIR /app
+COPY . /app
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+ENV PYTHONPATH="/app/src:${PYTHONPATH}"
+
+CMD ["pytest", "tests/test_hw_29_postgres.py", "--headless"]

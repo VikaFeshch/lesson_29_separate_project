@@ -4,6 +4,6 @@ requests
 assertpy
 pytest-html
 # pytest-html-reporter
-psycopg2
+psycopg2-binary
 # allure-pytest
 # pytest-xdist
