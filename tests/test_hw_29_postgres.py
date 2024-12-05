@@ -1,4 +1,5 @@
 import psycopg2
+import pytest
 
 def get_db_connection():
     return psycopg2.connect(
